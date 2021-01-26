@@ -440,15 +440,15 @@ body {
   .right-side {
     right: 0;
     background-color: $white;
-    // background-image: url('../images/couple/image0.jpeg');
-    // background-size: cover;
-    // background-position: center;
+    background-image: url('../images/couple/267A3227.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
   .h-split-logo-text {
     color: white;
     font-size: 22px;
-    font-family: $montserrat-light;
+    font-family: $montserrat-regular;
     letter-spacing: 2px;
     position: absolute;
     top: 35px;
@@ -458,7 +458,7 @@ body {
   .v-split-logo-text {
     color: white;
     font-size: 20px;
-    font-family: $montserrat-light;
+    font-family: $montserrat-regular;
     letter-spacing: 2px;
     position: absolute;
     top: 5px;
@@ -471,9 +471,10 @@ body {
   }
 
   .bottom-side {
-    // padding: 10%;
-    // background-image: url('../images/couple/image0.jpeg');
-
+    height: 100vh;
+    background-image: url('../images/couple/267A3227.jpg');
+    background-size: cover;
+    background-position: center;
   }
 
 

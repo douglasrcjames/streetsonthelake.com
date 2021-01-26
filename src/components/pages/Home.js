@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Col, Grid, Row } from 'react-flexbox-grid';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
@@ -39,12 +38,14 @@ class CanaryHome extends Component {
                     <title>Streets on the Lake</title>
                 </Helmet>
                 <div className={this.state.deviceWidth > 900 ? "h-split left-side" : "top-side"}>
-                    <h1 className={this.state.deviceWidth > 900 ? "h-split-logo-text" : "v-split-logo-text"}>Cooper &amp; Sarah</h1>
+                    <h1 className={this.state.deviceWidth > 900 ? "h-split-logo-text" : "v-split-logo-text"}>Cooper + Sarah</h1>
                     <div className="centered white">
-                        <h2 className="white montserrat-regular">UNDER CONSTRUCTION</h2>
-                        {/* <Link to="/about">
-                            <button type="button" className="md-white-to-inv-btn">Questions?</button>
-                        </Link> */}
+                        <p className="lg-text">08.28.21 - Big Lake, Alaska</p>
+                        <h2 className="white montserrat-regular">Working on the details.</h2>
+                        <p className="lg-text">Updates to come, stay tuned.</p>
+                        <Link to="/about">
+                            <button type="button" className="md-white-to-inv-btn">Contact us</button>
+                        </Link>
                        
                     </div>
                 </div>

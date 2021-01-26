@@ -5,8 +5,8 @@ import history from './history';
 import Routes from "./routes";
 
 // Components
-import Header from './components/misc/Header';
-import Footer from './components/misc/Footer';
+// import Header from './components/misc/Header';
+// import Footer from './components/misc/Footer';
 
 // CSS
 import "./assets/css/Text.scss";
