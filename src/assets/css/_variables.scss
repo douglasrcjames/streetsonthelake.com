@@ -7,6 +7,7 @@ $black: #000;
 $dark-grey: #6B6B6B;
 $grey: #A1A1A1;
 $light-grey: #D6D6D6;
+$xlight-grey: #E4E4E4;
 
 $dark-blue: #3B8FA8;
 $blue: #4FBFE0;
@@ -31,39 +32,39 @@ $light-orange: #FDC959;
 
 //// Fonts ////
 @font-face {
-    font-family: "Roboto-Thin";
-    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+    font-family: "Montserrat-Thin";
+    src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
 }
 @font-face {
-    font-family: "Roboto-Light";
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
+    font-family: "Montserrat-Light";
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
 }
 @font-face {
-    font-family: "Roboto-Regular";
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 @font-face {
-    font-family: "Roboto-Medium";
-    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-family: "Montserrat-Medium";
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
 }
 @font-face {
-    font-family: "Roboto-Bold";
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-family: "Montserrat-Bold";
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
 }
 @font-face {
-    font-family: "Roboto-Black";
-    src: url(../fonts/Roboto/Roboto-Black.ttf);
+    font-family: "Montserrat-Black";
+    src: url(../fonts/Montserrat/Montserrat-Black.ttf);
 }
 @font-face {
-    font-family: "Roboto-Italic";
-    src: url(../fonts/Roboto/Roboto-Italic.ttf);
+    font-family: "Montserrat-Italic";
+    src: url(../fonts/Montserrat/Montserrat-Italic.ttf);
 }
 
-$roboto-thin: "Roboto-Thin", "Arial Thin", sans-serif;
-$roboto-light: "Roboto-Light", "Arial Light", sans-serif;
-$roboto-regular: "Roboto-Regular", "Arial Regular", sans-serif;
-$roboto-medium: "Roboto-Medium", "Arial Medium", sans-serif;
-$roboto-bold: "Roboto-Bold", "Arial Bold", sans-serif;
-$roboto-black: "Roboto-Black", "Arial Black", sans-serif;
-$roboto-italic: "Roboto-Italic", "Arial Italic", sans-serif;
-// TODO note: Roboto as primary, Arial if Roboto not available, then just an Sans-Serif if Arial not available
+$montserrat-thin: "Montserrat-Thin", "Arial Thin", sans-serif;
+$montserrat-light: "Montserrat-Light", "Arial Light", sans-serif;
+$montserrat-regular: "Montserrat-Regular", "Arial Regular", sans-serif;
+$montserrat-medium: "Montserrat-Medium", "Arial Medium", sans-serif;
+$montserrat-bold: "Montserrat-Bold", "Arial Bold", sans-serif;
+$montserrat-black: "Montserrat-Black", "Arial Black", sans-serif;
+$montserrat-italic: "Montserrat-Italic", "Arial Italic", sans-serif;
+// TODO note: Montserrat as primary, Arial if Montserrat not available, then just an Sans-Serif if Arial not available

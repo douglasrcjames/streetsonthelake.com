@@ -1,100 +1,60 @@
 import React, { Component } from 'react'
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Col, Grid, Row } from 'react-flexbox-grid';
 import { Helmet } from 'react-helmet-async';
-import ContactForm from '../misc/ContactForm';
+import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+ 
+class CanaryHome extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             deviceWidth: 0,
+             deviceHeight: 0
+        }
+    }
 
-export default class Home extends Component {
+    componentDidMount(){
+        if(this.deviceWidth > 900){
+            document.body.style.overflow = "hidden";
+        }
+        
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+    }
+
+    updateWindowDimensions = () => {
+        this.setState({ deviceWidth: window.innerWidth, deviceHeight: window.innerHeight });
+    }  
+
+
     render() {
         return (
             <>
-            <div className="wrapper">
                 <Helmet>
-                    <title>Home | Doug's React Boiler</title>
+                    <title>Streets on the Lake</title>
                 </Helmet>
-                <h1>Home</h1>
-                {/* TODO: update content */}
-                <p>Welcome to Doug's React Boiler, click around a bit, it's a clean slate for you!</p>
-                <br/>
-                <Grid fluid>
-                    <Row center="xs">
-                        <Col xs={12} sm={3}>
-                            <i className="fas fa-seedling xl-icon green" />
-                            <h3>Green Column</h3>
-                            <p>More information below</p>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <i className="fas fa-tree xl-icon orange" />
-                            <h3>Orange Column</h3>
-                            <p>More information below</p>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <i className="fas fa-globe-africa xl-icon red" />
-                            <h3>Red Column</h3>
-                            <p>More information below</p>
-                        </Col>
-                        <Col xs={12} sm={3}>
-                            <i className="fas fa-star xl-icon yellow" />
-                            <h3>Yellow Column</h3>
-                            <p>More information below</p>
-                        </Col>
-                    </Row>
-                </Grid>
-                <br/>
-                <div className="center-text">
-                    <a href="https://www.github.com/douglasrcjames/dougs-react-boiler" target="_blank" rel="noopener noreferrer">
-                        <button className="md-blue-btn">
-                            Visit Github <i className="fab fa-github" />
-                        </button>
-                    </a>
+                <div className={this.state.deviceWidth > 900 ? "h-split left-side" : "top-side"}>
+                    <h1 className={this.state.deviceWidth > 900 ? "h-split-logo-text" : "v-split-logo-text"}>Cooper &amp; Sarah</h1>
+                    <div className="centered white">
+                        <h2 className="white montserrat-regular">UNDER CONSTRUCTION</h2>
+                        {/* <Link to="/about">
+                            <button type="button" className="md-white-to-inv-btn">Questions?</button>
+                        </Link> */}
+                       
+                    </div>
                 </div>
-            </div>
-            <div className="full-width bg-blue">
-                <div className="wrapper white">
-                    <h1 className="white no-margin">Why the long text?</h1>
-                    <p>
-                        Testing that the Contact anchor works! Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                        Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 
-                        minim adipisicing cillum do excepteur excepteur laborum sit ea. Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                        Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 
-                        minim adipisicing cillum do excepteur excepteur laborum sit ea. Aliquip amet tempor velit anim voluptate eu. Culpa quis laborum laboris est cupidatat. 
-                        In cillum ipsum commodo laboris ex ad aute. Aute elit incididunt excepteur irure esse aliquip nisi amet ex quis.
-                    </p>
-                    <p>
-                        Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                        Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 
-                        minim adipisicing cillum do excepteur excepteur laborum sit ea. Aliquip amet tempor velit anim voluptate eu. Culpa quis laborum laboris est cupidatat. 
-                        In cillum ipsum commodo laboris ex ad aute. Aute elit incididunt excepteur irure esse aliquip nisi amet ex quis.
-                        Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                        Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 
-                        minim adipisicing cillum do excepteur excepteur laborum sit ea.
-                    </p>
-                    <p>
-                        Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                        Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 
-                        minim adipisicing cillum do excepteur Aute elit incididunt excepteur irure esse aliquip nisi amet ex quis.
-                    </p>
-                    <p>
-                        Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                        Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 
-                        minim adipisicing cillum do excepteur excepteur laborum sit ea.
-                        Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                        Cupidatat ipsum Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 
-                        minim adipisicing cillum do excepteur excepteur laborum sit ea.
-                        Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                    </p>
-                    <p>
-                        Ut eu ipsum ipsum et occaecat aliqua nostrud ex est minim. 
-                        Cupidatat ipsum ex voluptate ea eu aliqua enim eiusmod duis et veniam. Cupidatat nisi adipisicing velit ad 
-                        minim adipisicing cillum do excepteur excepteur laborum sit ea. Aliquip amet tempor velit anim voluptate eu. Culpa quis laborum laboris est cupidatat. 
-                        In cillum ipsum commodo laboris ex ad aute. Aute elit incididunt excepteur irure esse aliquip nisi amet ex quis.
-                    </p>
+
+                <div className={this.state.deviceWidth > 900 ? "h-split right-side overflow-hidden" : "bottom-side"}>
+                    
                 </div>
-            </div>
-            <div className="wrapper">
-                <h1><a id="Contact" className="anchor" href="/#">Contact</a>Contact</h1>
-                <ContactForm />
-            </div>
             </>
         )
     }
 }
+
+export default withRouter(CanaryHome);

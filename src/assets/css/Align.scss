@@ -8,9 +8,7 @@
 /* Browser has default 8px around body */
 body {
     margin: 0;
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 2.5rem;    /* Footer height */
+
 }
 
 /* 
@@ -418,6 +416,66 @@ body {
         text-align: center;
     }
   }
+
+// Split screen //
+  .h-split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  }
+
+  .left-side {
+    left: 0;
+    background-color: $black;
+  }
+  
+  .right-side {
+    right: 0;
+    background-color: $white;
+    // background-image: url('../images/couple/image0.jpeg');
+    // background-size: cover;
+    // background-position: center;
+  }
+
+  .h-split-logo-text {
+    color: white;
+    font-size: 22px;
+    font-family: $montserrat-light;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 35px;
+    left: 15%;
+  }
+
+  .v-split-logo-text {
+    color: white;
+    font-size: 20px;
+    font-family: $montserrat-light;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 5px;
+    left: 5%;
+  }
+
+  .top-side {
+    padding: 15% 10% 10% 10%;
+    background-color: $black;
+  }
+
+  .bottom-side {
+    // padding: 10%;
+    // background-image: url('../images/couple/image0.jpeg');
+
+  }
+
 
 
 

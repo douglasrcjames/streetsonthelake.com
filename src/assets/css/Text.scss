@@ -1,19 +1,19 @@
 @import 'variables';
 
-.roboto-regular {
-    font-family: $roboto-regular !important;
+.montserrat-regular {
+    font-family: $montserrat-regular !important;
 }
 
-.roboto-medium {
-    font-family: $roboto-regular !important;
+.montserrat-medium {
+    font-family: $montserrat-regular !important;
 }
 
-.roboto-bold {
-    font-family: $roboto-bold !important;
+.montserrat-bold {
+    font-family: $montserrat-bold !important;
 }
 
-.roboto-black {
-    font-family: $roboto-black !important;
+.montserrat-black {
+    font-family: $montserrat-black !important;
 }
 
 /* 
@@ -21,21 +21,19 @@
 */
 h1 {
     font-size: 3em;
-    font-family: $roboto-black;
-    color: $blue;
+    font-family: $montserrat-black;
 }
 
 h2 {
     font-size: 2.5em;
-    font-family: $roboto-black;
-    color: $blue;
+    font-family: $montserrat-black;
 }
 
 h3 {
     font-size: 1.5em;
     padding: 0px !important;
     margin: 0px !important;
-    font-family: $roboto-black;
+    font-family: $montserrat-black;
     word-wrap: break-word !important;
     white-space: normal !important;
 }
@@ -53,18 +51,18 @@ h3 {
 }
 
 h4 {
-    font-family: $roboto-black;
+    font-family: $montserrat-black;
 }
 
 h5 {
-    font-family: $roboto-black;
+    font-family: $montserrat-black;
 }
 
 /* 
 * Body
 */
 p {
-    font-family: $roboto-regular !important;
+    font-family: $montserrat-regular !important;
     line-height: 1.6;
     font-size: 16;
 }
@@ -72,7 +70,7 @@ p {
 a:link {
     color: $blue;
     text-decoration: none;
-    font-family: $roboto-regular;
+    font-family: $montserrat-regular;
     cursor: pointer;
 }
 
@@ -86,27 +84,27 @@ a:hover {
 }
 
 b {
-    font-family: $roboto-black;
+    font-family: $montserrat-black;
 }
 
 i {
-    font-family: $roboto-italic
+    font-family: $montserrat-italic
 }
 
 ul,
 ol,
 li {
-    font-family: $roboto-regular;
+    font-family: $montserrat-regular;
     line-height: 1.6;
     font-size: 16;
 }
 
 div {
-    font-family: $roboto-regular;
+    font-family: $montserrat-regular;
 }
 
 span {
-    font-family: $roboto-regular;
+    font-family: $montserrat-regular;
 }
 
 

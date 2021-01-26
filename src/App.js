@@ -23,9 +23,9 @@ function App() {
     <HelmetProvider>
       <Router history={history}>
         <ScrollToTop>
-          <Header />
+          {/* <Header /> */}
           <Routes />
-          <Footer />
+          {/* <Footer /> */}
         </ScrollToTop>
       </Router>
     </HelmetProvider>
