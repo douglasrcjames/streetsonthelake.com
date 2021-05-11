@@ -17,7 +17,7 @@ export default class About extends Component {
                     </button>
                 </Link>
                 
-                <h1 className="montserrat-regular">Contact Us</h1>
+                <h1 className="nunito-regular">Contact Us</h1>
                 <p>Just want to say hi or have a question? Anything is welcome, let us know!</p>
                 <ContactForm />
                 <div className="center">

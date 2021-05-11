@@ -2,6 +2,7 @@
 
 .nav-container {
     margin: 0 auto;
+    background-color: $navy;
 }
 
 .nav-logo {
@@ -10,19 +11,19 @@
 }
 
 .nav-l-text {
-    font-size: 2.5rem;
-    color: $black;
+    font-size: 3rem;
+    margin-top: 20px;
+    font-family: $hello;
     vertical-align: middle;
     display: inline-block;
-    font-weight: 700;
-    margin-left: 10px;
-    color: $blue
+    color: $white
 }
 
 .nav-links {
-    float: right;
-    text-align: right;
-    padding-right: 50px;
+    float: center;
+    text-align: center;
+    text-transform: uppercase;
+    // padding-right: 50px;
 }
 
 .nav-link {
@@ -30,17 +31,17 @@
     cursor: pointer;
     height: 75px;
     line-height: 75px;
-    color: $black !important;
+    color: $white !important;
     padding: 0 25px;
     font-size: 20px;
   }
 
 .nav-link:hover {
-    color: $blue !important;
+    color: $pink !important;
 }
 
 .nav-select {
-    color: $blue !important;
+    color: $pink !important;
     text-decoration: underline !important;
 }
 
@@ -64,10 +65,11 @@
         font-size: 16px !important;
         height: 25px !important;
         line-height: 25px !important;
-        padding: 0px 10px 0px 10px;
+        padding: 0px 10px;
     }
 
     .nav-links {
-        padding-right: 0px;
+        
+        padding-bottom: 10px;
     }
 }

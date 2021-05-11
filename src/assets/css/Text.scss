@@ -1,76 +1,69 @@
 @import 'variables';
 
-.montserrat-regular {
-    font-family: $montserrat-regular !important;
+.nunito-regular {
+    font-family: $nunito-regular !important;
 }
 
-.montserrat-medium {
-    font-family: $montserrat-regular !important;
+.nunito-bold {
+    font-family: $nunito-bold !important;
 }
 
-.montserrat-bold {
-    font-family: $montserrat-bold !important;
-}
-
-.montserrat-black {
-    font-family: $montserrat-black !important;
-}
 
 /* 
 * Heading
 */
 h1 {
-    font-size: 3em;
-    font-family: $montserrat-black;
+    font-size: 3.4em;
+    font-family: $nunito-bold;
 }
 
 h2 {
-    font-size: 2.5em;
-    font-family: $montserrat-black;
+    font-size: 2.8em;
+    font-family: $nunito-bold;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding: 0px !important;
     margin: 0px !important;
-    font-family: $montserrat-black;
+    font-family: $nunito-bold;
     word-wrap: break-word !important;
     white-space: normal !important;
 }
 
 @media screen and (max-width: 900px) {
     h1 {
-        font-size: 2em;
+        font-size: 2.4em;
     }
     h2 {
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
     h3 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
 h4 {
-    font-family: $montserrat-black;
+    font-family: $nunito-bold;
 }
 
 h5 {
-    font-family: $montserrat-black;
+    font-family: $nunito-bold;
 }
 
 /* 
 * Body
 */
 p {
-    font-family: $montserrat-regular !important;
+    font-family: $nunito-regular !important;
     line-height: 1.6;
     font-size: 16;
 }
 
 a:link {
-    color: $blue;
+    color: $navy;
     text-decoration: none;
-    font-family: $montserrat-regular;
+    font-family: $nunito-regular;
     cursor: pointer;
 }
 
@@ -79,32 +72,32 @@ a:visited {
 }
 
 a:hover {
-    color: $light-blue;
+    color: $pink;
     text-decoration: underline;
 }
 
 b {
-    font-family: $montserrat-black;
+    font-family: $nunito-bold;
 }
 
 i {
-    font-family: $montserrat-italic
+    font-family: $nunito-italic
 }
 
 ul,
 ol,
 li {
-    font-family: $montserrat-regular;
+    font-family: $nunito-regular;
     line-height: 1.6;
     font-size: 16;
 }
 
 div {
-    font-family: $montserrat-regular;
+    font-family: $nunito-regular;
 }
 
 span {
-    font-family: $montserrat-regular;
+    font-family: $nunito-regular;
 }
 
 
@@ -143,6 +136,10 @@ span {
 }
 .white {
     color: $white !important;
+}
+
+.navy {
+    color: $navy;
 }
 
 /* Grey */

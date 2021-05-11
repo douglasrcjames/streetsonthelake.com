@@ -153,8 +153,21 @@ tbody tr:hover {
 }
 
 /* Full width backgrounds */
+.hero-img {
+    width:100%;
+    height: 100vh; 
+    background: $white;
+    background-image: url('../images/couple/267A4296.jpg');
+    background-size: cover;
+    
+    background-position: 0% 80%;
+}
 
-
+@media screen and (max-width: 1200px) {
+    .hero-img {
+        background-image: url('../images/couple/267A3227.jpg');
+    }
+}
 
 /* 
 * Misc 
@@ -167,10 +180,27 @@ tbody tr:hover {
     cursor: pointer;
 }
 
+.border-pink {
+    border: $pink solid 8px;
+
+}
+
+.border-salmon {
+    border: $salmon solid 8px;
+    border-bottom: 0px;
+    border-right: 0px;
+  
+}
+
 hr {
     height: 1px;
     background-color: $light-grey !important;
     border: 0 none;
+}
+
+.fill-svg-navy {
+    fill: $navy;
+    margin: 50px 0;
 }
 
 

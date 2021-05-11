@@ -5,8 +5,8 @@ import history from './history';
 import Routes from "./routes";
 
 // Components
-// import Header from './components/misc/Header';
-// import Footer from './components/misc/Footer';
+import Header from './components/misc/Header';
+import Footer from './components/misc/Footer';
 
 // CSS
 import "./assets/css/Text.scss";
@@ -14,6 +14,7 @@ import "./assets/css/Align.scss";
 import "./assets/css/Images.scss";
 import "./assets/css/Forms.scss";
 import "./assets/css/Misc.scss";
+import "./assets/css/PhotoGallery.scss";
 
 // This component fixes bug where new page load would sometimes be in the middle or bottom
 import ScrollToTop from "./components/misc/ScrollToTop";
@@ -23,7 +24,7 @@ function App() {
     <HelmetProvider>
       <Router history={history}>
         <ScrollToTop>
-          {/* <Header /> */}
+          <Header />
           <Routes />
           {/* <Footer /> */}
         </ScrollToTop>

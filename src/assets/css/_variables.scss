@@ -1,5 +1,9 @@
 /*//*/ /*/ Variables /*/ /*//*/
-// TODO: update colors and fonts if you like
+
+$salmon: #cc6666;
+$pink: #f39494;
+$navy: #093b5b;
+
 //// Colors ////
 $white: #fff;
 $black: #000;
@@ -32,39 +36,25 @@ $light-orange: #FDC959;
 
 //// Fonts ////
 @font-face {
-    font-family: "Montserrat-Thin";
-    src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
+    font-family: "Hello";
+    src: url(../fonts/hello/Hello.ttf);
 }
 @font-face {
-    font-family: "Montserrat-Light";
-    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
+    font-family: "Nunito-Regular";
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
 }
 @font-face {
-    font-family: "Montserrat-Regular";
-    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+    font-family: "Nunito-Bold";
+    src: url(../fonts/Nunito/Nunito-Bold.ttf);
 }
 @font-face {
-    font-family: "Montserrat-Medium";
-    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
-}
-@font-face {
-    font-family: "Montserrat-Bold";
-    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
-}
-@font-face {
-    font-family: "Montserrat-Black";
-    src: url(../fonts/Montserrat/Montserrat-Black.ttf);
-}
-@font-face {
-    font-family: "Montserrat-Italic";
-    src: url(../fonts/Montserrat/Montserrat-Italic.ttf);
+    font-family: "Nunito-Italic";
+    src: url(../fonts/Nunito/Nunito-Italic.ttf);
 }
 
-$montserrat-thin: "Montserrat-Thin", "Arial Thin", sans-serif;
-$montserrat-light: "Montserrat-Light", "Arial Light", sans-serif;
-$montserrat-regular: "Montserrat-Regular", "Arial Regular", sans-serif;
-$montserrat-medium: "Montserrat-Medium", "Arial Medium", sans-serif;
-$montserrat-bold: "Montserrat-Bold", "Arial Bold", sans-serif;
-$montserrat-black: "Montserrat-Black", "Arial Black", sans-serif;
-$montserrat-italic: "Montserrat-Italic", "Arial Italic", sans-serif;
+
+$hello: "Hello", "Arial Thin", sans-serif;
+$nunito-bold: "Nunito-Bold", "Arial Light", sans-serif;
+$nunito-regular: "Nunito-Regular", "Arial Regular", sans-serif;
+$nunito-italic: "Nunito-Italic", "Arial Regular", sans-serif;
 // TODO note: Montserrat as primary, Arial if Montserrat not available, then just an Sans-Serif if Arial not available

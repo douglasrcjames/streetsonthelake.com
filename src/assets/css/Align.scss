@@ -8,7 +8,6 @@
 /* Browser has default 8px around body */
 body {
     margin: 0;
-
 }
 
 /* 
@@ -170,12 +169,10 @@ body {
 }
 
 .right {
-    display: block;
     float: right;
 }
 
 .left {
-    display: block;
     float: left;
 }
 
@@ -400,20 +397,26 @@ body {
     align-items:center;
  }
 
+//  TODO: items not vertically aligned but not a big deal honestly
  .f-container {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-  }
-
-  @media screen and (max-width: 900px) {
-    .f-container {
-        display: block;
-        text-align: center;
+    padding-bottom: 5px;
+    .left {
+        margin-left: 5px;
+        font-size: 16px;
+        @media screen and (max-width: 901px) {
+            font-size: 12px;
+        }
+    }
+    .right {
+        margin-right: 5px;
+        font-size: 16px;
+        @media screen and (max-width: 901px) {
+            font-size: 12px;
+        }
     }
   }
 
@@ -448,7 +451,7 @@ body {
   .h-split-logo-text {
     color: white;
     font-size: 22px;
-    font-family: $montserrat-regular;
+    font-family: $nunito-regular;
     letter-spacing: 2px;
     position: absolute;
     top: 35px;
@@ -458,7 +461,7 @@ body {
   .v-split-logo-text {
     color: white;
     font-size: 20px;
-    font-family: $montserrat-regular;
+    font-family: $nunito-regular;
     letter-spacing: 2px;
     position: absolute;
     top: 5px;

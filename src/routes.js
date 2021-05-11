@@ -6,18 +6,18 @@ import { Page404 } from "./components/misc/Page404";
 
 // Pages
 import Home from './components/pages/Home'
-import About from './components/pages/About';
-import Credits from './components/pages/Credits';
-import Test from './components/pages/Test.tsx';
+import Registry from './components/pages/Registry';
+import Event from './components/pages/Event';
+import RSVP from './components/pages/RSVP';
 
 class Routes extends Component {
     render() {
         return (
             <Switch>
                 <Route exact path="/" component={withTracker(Home)} />
-                <Route exact path="/about" component={withTracker(About)} />
-                <Route exact path="/test" component={withTracker(Test)} />
-                <Route exact path="/credits" component={withTracker(Credits)} />
+                <Route exact path="/event" component={withTracker(Event)} />
+                <Route exact path="/rsvp" component={withTracker(RSVP)} />
+                <Route exact path="/registry" component={withTracker(Registry)} />
                 <Route component={withTracker(Page404)} />
             </Switch>
         )
