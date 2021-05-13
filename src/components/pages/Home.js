@@ -50,35 +50,21 @@ class CanaryHome extends Component {
                                 <Row start="xs" style={{paddingRight: "25px"}}>
                                     <Col>
                                         <p>
-                                            Commodo quis ad ipsum cupidatat nulla laboris id aliquip qui. Dolor sint exercitation dolor duis sunt. 
-                                            Pariatur incididunt irure duis pariatur esse ad amet nostrud. Qui laboris ut cupidatat sint anim nulla aliquip voluptate. 
-                                            Duis ex ad sunt Lorem est irure pariatur aliquip nulla quis mollit Lorem. Et aliqua nostrud sunt excepteur ipsum mollit 
-                                            commodo commodo quis aliquip qui sint. Nulla fugiat aliquip sit non.
+                                            Cooper &amp; Sarah both grew up here in Alaska, but didn't meet until the summer of 2014 when their friend/matchmaker John, invited the two out to Big Lake for Memorial Day weekend. 
+                                            They hit it off right away! Sarah was intrigued by Cooper's good looks, quick wit and sense of humor and Cooper was drawn in by Sarah's infectious smile and curly hair. 
+                                            They didn't waste any time and started dating right after that weekend. Then, Sarah's dad, Dave saw she was texting Cooper Street, and it turns out he knew the Streets pretty well. 
+                                            Dave was the assistant coach at UAF when Keith, Cooper's dad, played college hockey there and they have many funny memories on the road with the team. 
+                                            The Street &amp; Laurion families have been around each other for years, and now they're going to be family! 
+
                                         </p>
                                         <p>
-                                            Amet sunt incididunt consectetur voluptate cupidatat anim cupidatat ipsum tempor culpa labore culpa. 
-                                            Labore ea qui ullamco id anim et incididunt et pariatur amet aliqua. Fugiat ipsum officia enim minim dolor anim cillum 
-                                            Lorem officia ut. Incididunt tempor sint anim eiusmod ut laborum eiusmod deserunt aliqua enim id cillum nisi. Sit in tempor 
-                                            irure anim eu eiusmod dolor cillum ex culpa eu.
+                                            Since that summer, Cooper &amp; Sarah have spent the past 7 years figuring out life together. College graduations, new jobs, living together, raising their dog, Louise and then the biggest milestone, 
+                                            when Cooper decided to make it official and ask Sarah the big question! They got engaged in Whittier, Alaska on a camping trip with some of their closest friends and popped some champagne around the 
+                                            fire to celebrate. Then, to add to the excitement, they bought their first house and are welcoming a new addition to the family in June, Lady, their new bloodhound pup! They have built a 
+                                            beautiful life together so far that will continue to grow and flourish as they commit to a lifetime of "figuring it out" together. 
                                         </p>
                                         <p>
-                                            Irure aliquip eu anim eiusmod elit irure in excepteur ex ut laboris sit voluptate. Aliquip enim mollit est consequat fugiat. 
-                                            Laborum ad aliqua culpa velit reprehenderit ipsum deserunt aute sit elit nulla occaecat magna minim. Irure duis deserunt 
-                                            deserunt magna esse nisi ea nisi laborum aute labore esse. Et sunt ad tempor ex sit. Velit velit occaecat commodo adipisicing 
-                                            consectetur officia ipsum aliqua proident velit. In minim ad consectetur eiusmod cillum culpa voluptate quis deserunt esse esse 
-                                            id dolore anim.
-                                        </p>
-                                        <p>
-                                           Dolore commodo labore sint pariatur et consectetur in eu tempor esse consectetur. Consectetur voluptate ex occaecat culpa ex elit ea. 
-                                           Cillum ex et labore consectetur incididunt cupidatat consectetur. Proident qui commodo dolore culpa enim enim deserunt exercitation. 
-                                           Nulla ea sit irure labore. Exercitation aliquip magna ut nulla culpa aliqua nisi incididunt fugiat eu nulla aute qui. Aliquip commodo
-                                            Lorem non ex veniam.
-                                        </p>
-                                        <p>
-                                            Amet sunt incididunt consectetur voluptate cupidatat anim cupidatat ipsum tempor culpa labore culpa. 
-                                            Labore ea qui ullamco id anim et incididunt et pariatur amet aliqua. Fugiat ipsum officia enim minim dolor anim cillum 
-                                            Lorem officia ut. Incididunt tempor sint anim eiusmod ut laborum eiusmod deserunt aliqua enim id cillum nisi. Sit in tempor 
-                                            irure anim eu eiusmod dolor cillum ex culpa eu.
+                                            Cooper &amp; Sarah are beyond excited to celebrate their love and dance the night away with all their closest friends & family at Big Lake where their love story began! 
                                         </p>
                                     </Col>
                                 </Row>
