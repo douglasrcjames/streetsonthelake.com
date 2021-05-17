@@ -90,6 +90,10 @@
     background: $black
 }
 
+.bg-navy {
+    background: $navy
+}
+
 /* 
 * Table 
 */
@@ -165,7 +169,7 @@ tbody tr:hover {
 
 @media screen and (max-width: 1200px) {
     .hero-img {
-        background-image: url('../images/couple/267A3227.jpg');
+        background-image: url('../images/couple/267A3227-small.jpg');
     }
 }
 
@@ -187,15 +191,38 @@ tbody tr:hover {
 
 .border-salmon {
     border: $salmon solid 8px;
-    border-bottom: 0px;
-    border-right: 0px;
-  
+}
+
+.border-navy {
+    border: $navy solid 8px;
 }
 
 hr {
     height: 1px;
     background-color: $light-grey !important;
     border: 0 none;
+}
+
+
+.hr-navy {
+    border-bottom: 5px solid $navy;
+    margin: 25px 0;
+    width: 100%;
+    float: none;
+}
+
+.hr-navy-sm {
+    border-bottom: 5px solid $navy;
+    margin: 15px 0;
+    width: 50%;
+    float: center;
+}
+
+.hr-pink-sm {
+    border-bottom: 5px solid $pink;
+    margin: 15px 0;
+    width: 50%;
+    float: center;
 }
 
 .fill-svg-navy {

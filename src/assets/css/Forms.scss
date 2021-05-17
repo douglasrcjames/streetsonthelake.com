@@ -26,6 +26,11 @@ select:focus {
   box-shadow: 0 0 2pt 1pt $black;
 }
 
+.radio {
+    transform: scale(1.5);
+    margin: 15px 15px 0 0;
+}
+
 textarea {
   font-family: $nunito-regular;
   font-size: 16px;
@@ -40,18 +45,18 @@ textarea {
 
 // Buttons
 .md-blue-btn {
-  background-color: $blue;
+  background-color: $navy;
   font-family: $nunito-bold !important;
   font-size: 16px;
   border-radius: 3px;
   padding: 10px 35px;
   color: $white;
-  border: $light-grey solid 1px; 
+  border: $navy solid 1px; 
   cursor: pointer;
 }
 
 .md-blue-btn:hover {
-  background-color: $light-blue;
+  background-color: lighten($navy, 10%);
 }
 
 .md-blue-btn:focus { 

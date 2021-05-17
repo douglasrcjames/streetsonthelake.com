@@ -7,6 +7,15 @@ export function ucFirst(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
+export function splitAtFirstSpace(str) {
+    if (! str) return [];
+    var i = str.indexOf(' ');
+    if (i > 0) {
+      return [str.substring(0, i), str.substring(i + 1)];
+    }
+    else return [str];
+  }
+
 // Check if string is a URL
 export function checkURL(url) {
   var urlToString = url.toString().toLowerCase();
@@ -18,6 +27,41 @@ export function checkURL(url) {
     return 'video/unsupported'
   }
 };
+
+export function timestampToDateTime(timestamp) {
+    const dateObject = new Date(timestamp);
+    let dd = dateObject.getDate();
+    let mm = dateObject.getMonth() + 1; // January is 0!
+    const yyyy = dateObject.getFullYear();
+    let hrs = dateObject.getHours();
+    let mins = dateObject.getMinutes();
+    let seconds = dateObject.getSeconds();
+
+    if (dd < 10) {
+      dd = `0${dd}`;
+    }
+    if (mm < 10) {
+      mm = `0${mm}`;
+    }
+    if (hrs < 10) {
+      hrs = `0${hrs}`;
+    }
+    if (mins < 10) {
+      mins = `0${mins}`;
+    }
+    if (seconds < 10) {
+        seconds = `0${seconds}`;
+    }
+    const fullDate = `${mm}/${dd}/${yyyy}`;
+    const fullTime = `${hrs}:${mins}`;
+    const fullTimeWithSeconds = `${hrs}:${mins}.${seconds}`;
+    
+    return {
+      fullTime,
+      fullDate,
+      fullTimeWithSeconds
+    };
+  }
 
 // Ensure size is no more than 1GB (i think! lol, double check this)
 export function validateSize(file) {

@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid';
-import { Formik, Field } from 'formik';
+import { Formik, Field, Form } from 'formik';
 
 import { contactFormSchema } from '../../utils/formSchemas'
 import { firestore } from "../../Fire.js";
 
+import { store } from 'react-notifications-component';
+import { NOTIFICATION } from '../../utils/constants';
 export default class ContactForm extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +20,12 @@ export default class ContactForm extends Component {
             message: values.message,
             timestamp: Date.now(),
         }).then(
-            alert("Message submitted successfully.")
+            store.addNotification({
+                title: "Message sent",
+                message: `Your message was submitted successfully!`,
+                type: "success",
+                ...NOTIFICATION
+            })
         );
       }
       
@@ -38,9 +45,9 @@ export default class ContactForm extends Component {
                         actions.resetForm()
                     }}
                     validationSchema={contactFormSchema}
-                    >
+                >
                     {props => (
-                        <form onSubmit={props.handleSubmit}>
+                        <Form>
                             <Grid fluid>
                                 {/* Row 1 */}
                                 <Row>
@@ -106,14 +113,14 @@ export default class ContactForm extends Component {
                                     <Col xs={12}>
                                         <button 
                                             type="submit"
-                                            className="md-black-btn" 
+                                            className="md-blue-btn" 
                                             disabled={!props.dirty && !props.isSubmitting}>
                                                 Send
                                         </button>
                                     </Col>
                                 </Row>
                             </Grid>
-                        </form>
+                        </Form>
                     )}
                 </Formik>
             </div>

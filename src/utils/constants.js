@@ -72,6 +72,14 @@ export const weddingParty = [
 // TODO: seperate each group, then match them back up so if the user enter's either name they are registering for 1 group
 export const guestList = [
     {
+        name: "Sarah Laurion Street",
+        group: "0"
+    }, 
+    {
+        name: "Cooper Street",
+        group: "0"
+    }, 
+    {
         name: "Dave Laurion",
         group: "1"
     }, 
@@ -932,212 +940,179 @@ export const guestList = [
         group: "120"
     },
     {
-        name: "",
-        group: ""
+        name: "Samantha Sander",
+        group: "121"
     },
     {
-        name: "",
-        group: ""
+        name: "Zack Rall",
+        group: "122"
     },
     {
-        name: "",
-        group: ""
+        name: "Danielle Rall",
+        group: "122"
     },
     {
-        name: "",
-        group: ""
+        name: "Jake Tweit",
+        group: "123"
     },
     {
-        name: "",
-        group: ""
+        name: "Sara Tweit",
+        group: "123"
     },
     {
-        name: "",
-        group: ""
+        name: "Brandon Dickey",
+        group: "124"
     },
     {
-        name: "",
-        group: ""
+        name: "Crystal Madden",
+        group: "125"
     },
     {
-        name: "",
-        group: ""
+        name: "Corey Madden",
+        group: "125"
     },
     {
-        name: "",
-        group: ""
+        name: "Lindsey Dailey",
+        group: "126"
     },
     {
-        name: "",
-        group: ""
+        name: "Travis Johnson",
+        group: "126"
     },
     {
-        name: "",
-        group: ""
+        name: "Tessa Grenier",
+        group: "127"
     },
     {
-        name: "",
-        group: ""
+        name: "Chase Foster",
+        group: "127"
     },
     {
-        name: "",
-        group: ""
+        name: "Megan Dunagan",
+        group: "128"
     },
     {
-        name: "",
-        group: ""
+        name: "Casey Dunagan",
+        group: "128"
     },
     {
-        name: "",
-        group: ""
+        name: "Cheyanne Smallman",
+        group: "129"
     },
     {
-        name: "",
-        group: ""
+        name: "Brandon Burford",
+        group: "129"
     },
     {
-        name: "",
-        group: ""
+        name: "Jessica Pollard",
+        group: "130"
     },
     {
-        name: "",
-        group: ""
+        name: "Justine Lindberg",
+        group: "130"
     },
     {
-        name: "",
-        group: ""
+        name: "Lauren  Horan",
+        group: "131"
     },
     {
-        name: "",
-        group: ""
+        name: "Petter Horan",
+        group: "131"
     },
     {
-        name: "",
-        group: ""
+        name: "Trudy  Randlett",
+        group: "132"
     },
     {
-        name: "",
-        group: ""
+        name: "Rich Randlett",
+        group: "132"
     },
     {
-        name: "",
-        group: ""
+        name: "Cyrus Powers",
+        group: "133"
     },
     {
-        name: "",
-        group: ""
+        name: "Guest",
+        group: "133"
     },
     {
-        name: "",
-        group: ""
+        name: "The Becker Family",
+        group: "134"
     },
     {
-        name: "",
-        group: ""
+        name: "Paxton  Gutierrez",
+        group: "135"
     },
     {
-        name: "",
-        group: ""
+        name: "Trevor Gutierrez",
+        group: "135"
     },
     {
-        name: "",
-        group: ""
+        name: "Justin Weir",
+        group: "136"
     },
     {
-        name: "",
-        group: ""
+        name: "Trey Delauries",
+        group: "137"
     },
     {
-        name: "",
-        group: ""
+        name: "Guest",
+        group: "137"
     },
     {
-        name: "",
-        group: ""
+        name: "Patrick Taylor",
+        group: "138"
     },
     {
-        name: "",
-        group: ""
+        name: "Guest",
+        group: "138"
     },
     {
-        name: "",
-        group: ""
+        name: "Samantha Hunley",
+        group: "139"
     },
     {
-        name: "",
-        group: ""
+        name: "Denise Nichting",
+        group: "140"
     },
     {
-        name: "",
-        group: ""
+        name: "Guest",
+        group: "140"
     },
     {
-        name: "",
-        group: ""
+        name: "Jessika Anderson",
+        group: "141"
     },
     {
-        name: "",
-        group: ""
+        name: "Emily Lindsey",
+        group: "142"
     },
     {
-        name: "",
-        group: ""
+        name: "Teresa Taylor",
+        group: "143"
     },
     {
-        name: "",
-        group: ""
+        name: "Doug Scott",
+        group: "144"
     },
     {
-        name: "",
-        group: ""
+        name: "Keeter Brown",
+        group: "145"
     },
     {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-    {
-        name: "",
-        group: ""
-    },
-
+        name: "Kristen Brown",
+        group: "145"
+    }
 ]
+
+export const NOTIFICATION = {
+    insert: "top",
+    container: "top-center",
+    animationIn: ["animate__animated", "animate__fadeIn"],
+    animationOut: ["animate__animated", "animate__fadeOut"],
+    dismiss: {
+        duration: 5000,
+        onScreen: true,
+        pauseOnHover: true
+    }
+}

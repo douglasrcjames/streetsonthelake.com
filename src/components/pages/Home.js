@@ -2,8 +2,16 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet-async';
 import { withRouter } from 'react-router-dom';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import {Link} from 'react-router-dom';
 
 import coupleKiss from "../../assets/images/couple/267A3367.png";
+import sideSmile from "../../assets/images/couple/267A3130.jpg";
+import kissBackground from "../../assets/images/couple/267A3488.jpg";
+
+import coupleHandKiss from "../../assets/images/couple/267A3322.jpg";
+import coupleInAir from "../../assets/images/couple/267A3981.jpg";
+import coupleLaugh from "../../assets/images/couple/267A4106.jpg";
+import coupleHold from "../../assets/images/couple/267A4020.jpg";
 import PhotoGallery from "../misc/PhotoGallery";
 import { weddingParty } from '../../utils/constants';
 class CanaryHome extends Component {
@@ -12,7 +20,8 @@ class CanaryHome extends Component {
     
         this.state = {
              deviceWidth: 0,
-             deviceHeight: 0
+             deviceHeight: 0,
+             year: new Date().getFullYear(),
         }
     }
 
@@ -46,38 +55,63 @@ class CanaryHome extends Component {
                     <h1>Our Story</h1>
                     <Grid fluid>
                         <Row>
-                            <Col md={12} lg={8}>
+                            <Col lg={12} xl={8}>
                                 <Row start="xs" style={{paddingRight: "25px"}}>
                                     <Col>
-                                        <p>
-                                            Cooper &amp; Sarah both grew up here in Alaska, but didn't meet until the summer of 2014 when their friend/matchmaker John, invited the two out to Big Lake for Memorial Day weekend. 
-                                            They hit it off right away! Sarah was intrigued by Cooper's good looks, quick wit and sense of humor and Cooper was drawn in by Sarah's infectious smile and curly hair. 
-                                            They didn't waste any time and started dating right after that weekend. Then, Sarah's dad, Dave saw she was texting Cooper Street, and it turns out he knew the Streets pretty well. 
-                                            Dave was the assistant coach at UAF when Keith, Cooper's dad, played college hockey there and they have many funny memories on the road with the team. 
-                                            The Street &amp; Laurion families have been around each other for years, and now they're going to be family! 
+                                        <Row>
+                                            <p>
+                                                Cooper &amp; Sarah both grew up here in Alaska, but didn't meet until the summer of 2014 when their friend/matchmaker John, invited the two out to Big Lake for Memorial Day weekend. 
+                                                They hit it off right away! Sarah was intrigued by Cooper's good looks, quick wit and sense of humor and Cooper was drawn in by Sarah's infectious smile and curly hair. 
+                                                They didn't waste any time and started dating right after that weekend. Then, Sarah's dad, Dave saw she was texting Cooper Street, and it turns out he knew the Streets pretty well. 
+                                                Dave was the assistant coach at UAF when Keith, Cooper's dad, played college hockey there and they have many funny memories on the road with the team. 
+                                                The Street &amp; Laurion families have been around each other for years, and now they're going to be family! 
 
-                                        </p>
-                                        <p>
-                                            Since that summer, Cooper &amp; Sarah have spent the past 7 years figuring out life together. College graduations, new jobs, living together, raising their dog, Louise and then the biggest milestone, 
-                                            when Cooper decided to make it official and ask Sarah the big question! They got engaged in Whittier, Alaska on a camping trip with some of their closest friends and popped some champagne around the 
-                                            fire to celebrate. Then, to add to the excitement, they bought their first house and are welcoming a new addition to the family in June, Lady, their new bloodhound pup! They have built a 
-                                            beautiful life together so far that will continue to grow and flourish as they commit to a lifetime of "figuring it out" together. 
-                                        </p>
-                                        <p>
-                                            Cooper &amp; Sarah are beyond excited to celebrate their love and dance the night away with all their closest friends & family at Big Lake where their love story began! 
-                                        </p>
+                                            </p>
+                                            <p>
+                                                Since that summer, Cooper &amp; Sarah have spent the past 7 years figuring out life together. College graduations, new jobs, living together, raising their dog, Louise and then the biggest milestone, 
+                                                when Cooper decided to make it official and ask Sarah the big question! They got engaged in Whittier, Alaska on a camping trip with some of their closest friends and popped some champagne around the 
+                                                fire to celebrate. Then, to add to the excitement, they bought their first house and are welcoming a new addition to the family in June, Lady, their new bloodhound pup! They have built a 
+                                                beautiful life together so far that will continue to grow and flourish as they commit to a lifetime of "figuring it out" together. 
+                                            </p>
+                                            <p>
+                                                Cooper &amp; Sarah are beyond excited to celebrate their love and dance the night away with all their closest friends &amp; family at Big Lake where their love story began! 
+                                            </p>
+                                        </Row>
+                                       
+                                        <Row center="xs">
+                                            <Col md={12} lg={6}>
+                                                <img src={sideSmile} alt={"couple smile"} style={{ width: "100%", height: "auto", maxWidth: "400px"}} className="border-navy"/>
+                                            </Col>
+                                            <Col md={12} lg={6}>
+                                                <img src={kissBackground} alt={"couple kiss"} style={{ width: "100%", height: "auto", maxWidth: "400px"}} className="border-salmon"/>
+                                            </Col>
+                                        </Row>
                                     </Col>
                                 </Row>
-                                
                             </Col>
-                            <Col md={12} lg={4}>
-                                <Row end="xs" center="xs">
-                                    <Col className="border-salmon">
-                                        <div >
-                                            <img src={coupleKiss} alt={"couple kiss"} style={{  width: "100%", height: "auto", maxWidth: "500px"}} className="border-pink"/>
+                            <Col lg={12} xl={4}>
+                                <Row  center="xs">
+                                    <Col>
+                                        <div>
+                                            <img src={coupleKiss} alt={"couple kiss"} style={{ width: "100%", height: "auto", maxWidth: "650px"}} className="border-pink"/>
                                         </div>
                                     </Col>
                                 </Row>
+                            </Col>
+                        </Row>
+                        <div className="hr-navy" />
+                        <Row center="xs">
+                            <Col sm={12} md={6} lg={3}>
+                                <img src={coupleHandKiss} alt={"couple hand kiss"} style={{ width: "100%", height: "auto", maxWidth: "300px"}} className="border-salmon"/>
+                            </Col>
+                            <Col sm={12} md={6} lg={3}>
+                                <img src={coupleInAir} alt={"couple in air"} style={{ width: "100%", height: "auto", maxWidth: "300px"}} className="border-navy"/>
+                            </Col>
+                            <Col sm={12} md={6} lg={3}>
+                                <img src={coupleLaugh} alt={"couple laugh"} style={{ width: "100%", height: "auto", maxWidth: "300px"}} className="border-pink"/>
+                            </Col>
+                            <Col sm={12} md={6} lg={3}>
+                                <img src={coupleHold} alt={"couple hold"} style={{ width: "100%", height: "auto", maxWidth: "300px"}} className="border-navy"/>
                             </Col>
                         </Row>
                     </Grid>
@@ -94,7 +128,7 @@ class CanaryHome extends Component {
                     >
                         <g>
                             <g>
-                                <path class="st0" d="M104.9,200.2c11.5,0.3,23.1,0.1,34.3-2.6c10.5-2.6,20.8-5.7,30.9-9.4c4.6-1.6,9.1-3.3,13.6-5.1
+                                <path className="st0" d="M104.9,200.2c11.5,0.3,23.1,0.1,34.3-2.6c10.5-2.6,20.8-5.7,30.9-9.4c4.6-1.6,9.1-3.3,13.6-5.1
                                     c2.6-1,5.2-2.1,7.7-3.2c-0.9,0.4,7.3-3.1,4.4-1.9c-3.1,1.3,5.1-2.2,6.4-2.8c9.9-4.6,19.5-9.7,29.1-15c38.2-21,74.2-45.5,112.6-66
                                     c9.4-5,18.8-9.9,28.4-14.5c4.8-2.3,9.6-4.4,14.5-6.6c3.5-1.5-3.7,1.5-0.2,0.1c1-0.4,2-0.8,2.9-1.2c3-1.2,5.9-2.3,8.9-3.4
                                     c9.8-3.6,19.7-6.6,29.8-9c4.6-1.1,9.2-2,13.8-2.9c2-0.4,5.9-1.7,8-1.3c-0.6-0.1-5.9,0.7-0.8,0.1c1.3-0.1,2.7-0.3,4-0.4
@@ -116,9 +150,204 @@ class CanaryHome extends Component {
                             </g>
                         </g>
                     </svg>
-                    <h2>Gallery</h2>
+                    
+                    <Grid fluid>
+                        <Row center="xs">
+                            <h2 className="sm-margin-t">Our Wedding Party</h2>
+                        </Row>
+                        <Row center="xs">
+                            <Col sm={12} md={4} lg={3}>
+                                <p>
+                                    <b>Bride's Parents:</b><br/>
+                                    <u>David &amp; Tracey Laurion</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={4} lg={3}>
+                                <p>
+                                    <b>Groom's Parents:</b><br/>
+                                    <u>Keith Street &amp; Rhonda Farrell</u> 
+                                </p>
+                            </Col>
+                        </Row>
+                        <Row center="xs">
+                            <Col>
+                                <p>
+                                    <b>Officiant:</b><br/>
+                                    <u>Jimmy Christianson</u>
+                                </p>
+                            </Col>
+                        </Row>
+                        <Row center="xs">
+                            <Col>
+                                <p>
+                                    <b>Ring Bearer:</b><br/>
+                                    <u>Quinn Diessner</u>
+                                </p>
+                            </Col>
+                        </Row>
+                        <Row center="xs">
+                            <div className="hr-pink-sm" />
+                        </Row>
+                        <Row center="xs">
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Matron Of Honor, Sarah's big sister</b><br/>
+                                    <u>Mackenzie Diessner</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Maid of Honor, Sarah's little sister</b><br/>
+                                    <u>Sydney Laurion</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Bridesmaid, Cooper's sister</b><br/>
+                                    <u>Kylie Ramos</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Bridesmaid, childhood friend</b><br/>
+                                    <u>Mattisen Sept</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Bridesmaid, PIC &amp; friend</b><br/>
+                                    <u>Chloe Lindsey</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Bridesmaid, friend &amp; sister</b><br/>
+                                    <u>Shea Prestegard</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Bridesmaid, Tridelta sorority sister</b><br/>
+                                    <u>Ashley Taylor</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Bridesmaid, Tridelta sorority sister</b><br/>
+                                    <u>Ana Campos</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Bridesmaid, childhood dance partner</b><br/>
+                                    <u>Ellicia Turner</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Bridesmaid, childhood friend</b><br/>
+                                    <u>Michayla Nice</u>
+                                </p>
+                            </Col>
+                        </Row>
+                        <Row center="xs">
+                            <div className="hr-navy-sm" />
+                        </Row>
+                        <Row center="xs">
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Best Man, Riding buddy &amp; friend</b><br/>
+                                    <u>Erik Scott</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, Brother-in-law &amp; friend</b><br/>
+                                    <u>Adrian Ramos</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, childhood PIC &amp; friend</b><br/>
+                                    <u>Hayden Wright</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, childhood friend</b><br/>
+                                    <u>John Regnart</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, childhood friend</b><br/>
+                                    <u>Alex Prestegard</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, childhood friend</b><br/>
+                                    <u>Bobby Murphy</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, childhood friend</b><br/>
+                                    <u>Chase Crabb</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, childhood friend</b><br/>
+                                    <u>Dylan Clowers</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, friend &amp; old landlord</b><br/>
+                                    <u>Adam Harkreader</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={6} lg={4} xl={3}>
+                                <p>
+                                    <b>Groomsmen, childhood friend &amp; riding buddy</b><br/>
+                                    <u>Lucas Nokelby</u>
+                                </p>
+                            </Col>
+                            
+                        </Row>
+                        <Row center="xs">
+                            <Col sm={12} md={6}>
+                                <p>
+                                    <b>Honorary Groomsmen, Cooper's Bestfriend.</b><br/>
+                                    <u>Cole Christianson</u><br/>
+                                    If heaven wasn't so far away, you would be by our side on our wedding day. RIP (heart)
+                                </p>
+                            </Col>
+                        </Row>
+                    </Grid>
+                    <div className="hr-navy" />
                     <div className="center-text">
                         <PhotoGallery photos={weddingParty}/>
+                    </div>
+                </div>
+                <div className="center-text">
+                    <Link to="/event">
+                        <button className="md-blue-btn">
+                            View event details
+                        </button>
+                    </Link>
+                </div>
+                <div style={{padding: "40px 20px"}}>
+                    <div className="left">
+                        &copy;
+                        {' '}
+                        {this.state.year}
+                        {' '}
+                        Streets on the Lake
+                    </div>
+                    <div className="right">
+                        <a href="https://www.douglasrcjames.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-tools"/> by douglasrcjames</a> 
                     </div>
                 </div>
             </>

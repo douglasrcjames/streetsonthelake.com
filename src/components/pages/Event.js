@@ -1,71 +1,55 @@
 import React, { Component } from 'react'
-
+import SimpleMap from '../misc/SimpleMap'
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import {Link} from 'react-router-dom';
+import dish from '../../assets/images/icons/dish.png'
+import rings from '../../assets/images/icons/engagement.png'
+import wave from '../../assets/images/icons/wave.png'
 export default class Event extends Component {
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            year: new Date().getFullYear(),
+        }
+    }
+    
     render() {
         return (
+            <>
             <div className="wrapper">
-                <h1>Event</h1>
-                <p>
-                    <b>Friday, August 27th, 2021</b> <br/>
-                    Rehearsal Dinner w/ wedding party | 5pm <br/>
-                    Stock the Bar / Meet &amp; Greet | 7:30-9:30pm 
-                </p>
-                <p>
-                    <b>Saturday, August 28th, 2021</b> <br/>
-                    Wedding Ceremony &amp; Reception <br/>
-                    Events start at 4pm at Blue Lantern Lodge 
-                 </p>
-                <p>
-                    <b>Sunday, August 29th, 2021</b> <br/>
-                    Mr. &amp; Mrs. Street Send Off | 2pm 
-                </p>
-
-                <h2 className="sm-margin-t">Wedding Party</h2>
-                <p>
-                    <b>Bride's Parents:</b><br/>
-                    <u>David &amp; Tracey Laurion</u>
-                </p>
-                <p>
-                    <b>Groom's Parents:</b><br/>
-                    <u>Keith Street &amp; Rhonda Farrell</u> 
-                </p>
-                <p>
-                    <b>Officiant:</b><br/>
-                    <u>Jimmy Christianson</u>
-                </p>
-                <p>
-                    <b>Ring Bearer:</b><br/>
-                    <u>Quinn Diessner</u>
-                </p>
-                <p>
-                    <b>Wedding Party:</b><br/>
-                    <u>Mackenzie Diessner</u> - Matron Of Honor, Sarah's big sister <br/>
-                    <u>Sydney Laurion</u> - Maid of Honor, Sarah's little sister <br/>
-                    <u>Kylie Ramos</u> - Bridesmaid, Cooper's sister  <br/>
-                    <u>Mattisen Sept</u> - Bridesmaid, childhood friend  <br/>
-                    <u>Chloe Lindsey</u> - Bridesmaid, PIC &amp; friend  <br/>
-                    <u>Shea Prestegard</u> - Bridesmaid, friend &amp; sister <br/>
-                    <u>Ashley Taylor</u> - Bridesmaid, Tridelta sorority sister  <br/>
-                    <u>Ana Campos</u> - Bridesmaid, Tridelta sorority sister <br/>
-                    <u>Ellicia Turner</u> - Bridesmaid, childhood dance partner  <br/>
-                    <u>Michayla Nice</u> - Bridesmaid, childhood friend  <br/>
-                </p>
-                <p>
-                    <u>Erik Scott</u> - Best Man, Riding buddy &amp; friend <br/>
-                    <u>Adrian Ramos</u> - Groomsmen, Brother-in-law &amp; friend <br/>
-                    <u>Hayden Wright</u> - Groomsmen, childhood PIC &amp; friend <br/>
-                    <u>John Regnart</u> - Groomsmen, childhood friend <br/>
-                    <u>Alex Prestegard</u> - Groomsmen, childhood friend <br/>
-                    <u>Bobby Murphy</u> - Groomsmen, childhood friend <br/>
-                    <u>Chase Crabb</u> - Groomsmen, childhood friend<br/>
-                    <u>Dylan Clowers</u> - Groomsmen, childhood friend <br/>
-                    <u>Adam Harkreader</u> - Groomsmen, friend &amp; old landlord <br/>
-                    <u>Lucas Nokelby</u> - Groomsmen, childhood friend &amp; riding buddy<br/>
-                </p>
-                <p>
-                    <u>Cole Christianson</u> - Honorary Groomsmen, Cooper's Bestfriend. If heaven wasn't so far away, you would be by our side on our wedding day. RIP (heart) 
-                </p>
-
+                <h1>The Event</h1>
+                <Grid fluid>
+                    <Row center="xs">
+                        <Col sm={12} md={4}>
+                            <img src={dish} alt="dish" style={{ width: "100%", height: "auto", maxWidth: "125px", padding: "25px" }} />
+                            <h3>Rehearsal Dinner</h3>
+                            <p>
+                                <b>Friday, August 27th, 2021</b> <br/>
+                                Rehearsal Dinner w/ wedding party | <u>5pm</u> <br/>
+                                Stock the Bar / Meet &amp; Greet | <u>7:30-9:30pm</u> 
+                            </p>
+                        </Col>
+                        <Col sm={12} md={4}>
+                            <img src={rings} alt="rings marriage" style={{ width: "100%", height: "auto", maxWidth: "125px", padding: "25px" }} />
+                            <h3>Ceremony &amp; Reception</h3>
+                            <p>
+                                <b>Saturday, August 28th, 2021</b> <br/>
+                                Wedding Ceremony &amp; Reception <br/>
+                                Events start at <u>4pm</u> at Blue Lantern Lodge 
+                             </p>
+                        </Col>
+                        <Col sm={12} md={4}>
+                            <img src={wave} alt="hand wave" style={{ width: "100%", height: "auto", maxWidth: "125px", padding: "25px" }} />
+                            <h3>Send Off</h3>
+                            <p>
+                                <b>Sunday, August 29th, 2021</b> <br/>
+                                Mr. &amp; Mrs. Street Send Off | <u>2pm</u> 
+                            </p>
+                        </Col>
+                    </Row>
+                </Grid>
+               
                 <h2 className="sm-margin-t">Accommodations</h2>
                 <p>See list of cabins, lodges and hotels on and near Big Lake, Alaska.</p>
                 <ul>
@@ -115,8 +99,25 @@ export default class Event extends Component {
                         </a>
                     </li>
                 </ul>
-                {/* TODO: MAP HERE from Google for now? */}
             </div>
+                
+            <SimpleMap />
+            <div className="bg-navy" style={{padding: "40px 20px"}}>
+                <div className="left white">
+                    &copy;
+                    {' '}
+                    {this.state.year}
+                    {' '}
+                    Streets on the Lake
+                </div>
+                <div className="center-text">
+                    <Link to="/credits" className="white">Icon Credits</Link>
+                </div>
+                <div className="right white">
+                    <a className="white text-hover" href="https://www.douglasrcjames.com" target="_blank" rel="noopener noreferrer"><i className="fas fa-tools"/> by douglasrcjames</a> 
+                </div>
+            </div>
+            </>
         )
     }
 }
