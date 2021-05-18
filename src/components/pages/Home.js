@@ -178,10 +178,16 @@ class CanaryHome extends Component {
                             </Col>
                         </Row>
                         <Row center="xs">
-                            <Col>
+                            <Col sm={12} md={4} lg={3}>
                                 <p>
                                     <b>Ring Bearer:</b><br/>
                                     <u>Quinn Diessner</u>
+                                </p>
+                            </Col>
+                            <Col sm={12} md={4} lg={3}>
+                                <p>
+                                    <b>Flower Girl:</b><br/>
+                                    <u>Aria Rounds</u>
                                 </p>
                             </Col>
                         </Row>
@@ -321,7 +327,7 @@ class CanaryHome extends Component {
                                 <p>
                                     <b>Honorary Groomsmen, Cooper's Bestfriend.</b><br/>
                                     <u>Cole Christianson</u><br/>
-                                    If heaven wasn't so far away, you would be by our side on our wedding day. RIP (heart)
+                                    If heaven wasn't so far away, you would be by our side on our wedding day. RIP &#128150;
                                 </p>
                             </Col>
                         </Row>

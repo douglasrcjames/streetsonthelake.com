@@ -27,7 +27,7 @@ export default class Event extends Component {
                             <p>
                                 <b>Friday, August 27th, 2021</b> <br/>
                                 Rehearsal Dinner w/ wedding party | <u>5pm</u> <br/>
-                                Stock the Bar / Meet &amp; Greet | <u>7:30-9:30pm</u> 
+                                Stock the Bar / Meet &amp; Greet | <u>8pm-10pm</u> 
                             </p>
                         </Col>
                         <Col sm={12} md={4}>
@@ -52,6 +52,7 @@ export default class Event extends Component {
                
                 <h2 className="sm-margin-t">Accommodations</h2>
                 <p>See list of cabins, lodges and hotels on and near Big Lake, Alaska.</p>
+                <p><b>Parking</b> - There will be no parking at the venue. Please arrange transportation to drop-off at the venue or there will be limited parking along the road. </p>
                 <ul>
                     <li>
                         <a 
