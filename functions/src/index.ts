@@ -88,9 +88,6 @@ export const onReservationCreated = functions.firestore.document('reservations/{
                                     }
                                 }
                             })  
-                            
-                            console.log("newRegisteredArray: " + newRegisteredArray)
-                            console.log("newUnregisteredArray: " + newUnregisteredArray)
 
                             // Update both arrays with these new changes when we finished
                             allPromises.push(
@@ -145,9 +142,9 @@ export const onReservationCreated = functions.firestore.document('reservations/{
             // Pack it
             const mailOptions = {
                 from: `drcj.dev@gmail.com`,
-                to: 'drcj.dev@gmail.com, s.laurion24@gmail.com', // TODO: add back sarah!
+                to: 'drcj.dev@gmail.com, s.laurion24@gmail.com', 
                 replyTo: `drcj.dev@gmail.com`,
-                subject: `New wedding RSVP from ${newValue.guests[0].group}!`,
+                subject: `New wedding RSVP from group ${newValue.guests[0].group}!`,
                 text: newValue.message,
                 html: htmlEmail
             }

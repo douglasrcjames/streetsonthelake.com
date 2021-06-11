@@ -67,6 +67,20 @@ export const weddingParty = [
     require("../assets/images/group/IMG_8185 2.jpg"),
     require("../assets/images/group/IMG_8489.jpg"),
     require("../assets/images/group/sarahascanio-202.jpg"),
+    require("../assets/images/group/image3 (1).jpeg"),
+    require("../assets/images/group/image1.jpeg"),
+    require("../assets/images/group/image0 (1).jpeg"),
+    require("../assets/images/group/image13.jpeg"),
+    require("../assets/images/group/image9.jpeg"),
+    require("../assets/images/group/image10.jpeg"),
+    require("../assets/images/group/image7.jpeg"),
+    require("../assets/images/group/image8.jpeg"),
+    require("../assets/images/group/image6.jpeg"),
+    require("../assets/images/group/image5.jpeg"),
+    require("../assets/images/group/image4.jpeg"),
+    require("../assets/images/group/image3.jpeg"),
+    require("../assets/images/group/image2.jpeg"),
+    require("../assets/images/group/image0.jpeg"),
 ]
 
 // TODO: seperate each group, then match them back up so if the user enter's either name they are registering for 1 group
@@ -1102,7 +1116,19 @@ export const guestList = [
     {
         name: "Kristen Brown",
         group: "145"
-    }
+    },
+    {
+        name: "John Dennehy",
+        group: "146"
+    },
+    {
+        name: "Missy Callies",
+        group: "147"
+    },
+    {
+        name: "Guest",
+        group: "147"
+    },
 ]
 
 export const NOTIFICATION = {
